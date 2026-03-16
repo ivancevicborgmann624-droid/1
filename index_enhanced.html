@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小马宝莉 - 角色与剧情介绍</title>
+    <link rel="stylesheet" href="styles_enhanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- PWA配置 -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="小马宝莉">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-152x152.png">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">🌈 小马宝莉</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#characters" class="nav-link">角色介绍</a></li>
+                <li><a href="#story" class="nav-link">剧情概览</a></li>
+                <li><a href="#episodes" class="nav-link">精彩剧集</a></li>
+                <li><a href="#gallery" class="nav-link">图片画廊</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页英雄区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">欢迎来到小马宝莉的世界</h1>
+            <p class="hero-subtitle">在这里，每一匹小马都有自己独特的故事和魔法</p>
+            <div class="hero-buttons">
+                <a href="#characters" class="btn btn-primary">探索角色</a>
+                <a href="#story" class="btn btn-secondary">了解剧情</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="character-showcase">
+                <div class="showcase-item twilight">暮光闪闪</div>
+                <div class="showcase-item rainbow">云宝</div>
+                <div class="showcase-item applejack">苹果杰克</div>
+                <div class="showcase-item rarity">珍奇</div>
+                <div class="showcase-item fluttershy">柔柔</div>
+                <div class="showcase-item pinkie">碧琪</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 角色介绍部分 -->
+    <section id="characters" class="characters">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">主要角色</h2>
+                <p class="section-subtitle">认识六位充满魔力的小伙伴</p>
+            </div>
+
+            <div class="character-grid">
+                <!-- 暮光闪闪 -->
+                <div class="character-card">
+                    <div class="character-image twilight">
+                        <img src="images/twilight.webp" 
+                             alt="暮光闪闪" 
+                             class="character-photo"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)';this.style.display='none';">
+                    </div>
+                    <div class="character-info">
+                        <h3>暮光闪闪</h3>
+                        <p class="character-title">魔法公主</p>
+                        <p class="character-description">魔法公主，友谊公主，热爱学习和魔法。作为主角，她带领朋友们学习友谊的魔法。</p>
+                        <div class="character-details">
+                            <div class="detail-item">
+                                <span class="detail-label">特殊能力</span>
+                                <span class="detail-value">强大的魔法</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">性格</span>
+                                <span class="detail-value">聪明、好学、负责任</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">代表元素</span>
+                                <span class="detail-value">魔法</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 云宝 -->
+                <div class="character-card">
+                    <div class="character-image rainbow">
+                        <img src="images/rainbow.webp" 
+                             alt="云宝" 
+                             class="character-photo"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';this.style.display='none';">
+                    </div>
+                    <div class="character-info">
+                        <h3>云宝</h3>
+                        <p class="character-title">彩虹飞马</p>
+                        <p class="character-description">彩虹色的飞马，热爱速度和冒险。她是小马谷最快的飞马，梦想成为闪电飞马队的一员。</p>
+                        <div class="character-details">
+                            <div class="detail-item">
+                                <span class="detail-label">特殊能力</span>
+                                <span class="detail-value">超音速飞行</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">性格</span>
+                                <span class="detail-value">勇敢、自信、忠诚</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">代表元素</span>
+                                <span class="detail-value">忠诚</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 苹果杰克 -->
+                <div class="character-card">
+                    <div class="character-image applejack">
+                        <img src="images/applejack.webp" 
+                             alt="苹果杰克" 
+                             class="character-photo"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)';this.style.display='none';">
+                    </div>
+                    <div class="character-info">
+                        <h3>苹果杰克</h3>
+                        <p class="character-title">诚实农场主</p>
+                        <p class="character-description">诚实可靠的农场小马，在甜苹果园工作。她勤劳朴实，总是说到做到。</p>
+                        <div class="character-details">
+                            <div class="detail-item">
+                                <span class="detail-label">特殊能力</span>
+                                <span class="detail-value">农业技能</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">性格</span>
+                                <span class="detail-value">诚实、勤劳、务实</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">代表元素</span>
+                                <span class="detail-value">诚实</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 珍奇 -->
+                <div class="character-card">
+                    <div class="character-image rarity">
+                        <img src="images/rarity.webp" 
+                             alt="珍奇" 
+                             class="character-photo"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)';this.style.display='none';">
+                    </div>
+                    <div class="character-info">
+                        <h3>珍奇</h3>
+                        <p class="character-title">时尚设计师</p>
+                        <p class="character-description">时装设计师小马，追求完美和优雅。她拥有独特的时尚品味，喜欢为朋友们设计美丽的服装。</p>
+                        <div class="character-details">
+                            <div class="detail-item">
+                                <span class="detail-label">特殊能力</span>
+                                <span class="detail-value">时尚设计</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">性格</span>
+                                <span class="detail-value">优雅、慷慨、有艺术感</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">代表元素</span>
+                                <span class="detail-value">慷慨</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 柔柔 -->
+                <div class="character-card">
+                    <div class="character-image fluttershy">
+                        <img src="images/fluttershy.webp" 
+                             alt="柔柔" 
+                             class="character-photo"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, #fa709a 0%, #fee140 100%)';this.style.display='none';">
+                    </div>
+                    <div class="character-info">
+                        <h3>柔柔</h3>
+                        <p class="character-title">动物守护者</p>
+                        <p class="character-description">温柔的飞马，热爱动物和大自然。她虽然害羞，但内心坚强，总是善待每一个生命。</p>
+                        <div class="character-details">
+                            <div class="detail-item">
+                                <span class="detail-label">特殊能力</span>
+                                <span class="detail-value">与动物沟通</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">性格</span>
+                                <span class="detail-value">温柔、善良、害羞</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">代表元素</span>
+                                <span class="detail-value">善良</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 碧琪 -->
+                <div class="character-card">
+                    <div class="character-image pinkie">
+                        <img src="images/pinkie.webp" 
+                             alt="碧琪" 
+                             class="character-photo"
+                             onerror="this.parentElement.style.background='linear-gradient(135deg, #30cfd0 0%, #330867 100%)';this.style.display='none';">
+                    </div>
+                    <div class="character-info">
+                        <h3>碧琪</h3>
+                        <p class="character-title">派对策划师</p>
+                        <p class="character-description">派对策划大师，总是充满活力和快乐。她喜欢为朋友们举办派对，带来欢笑。</p>
+                        <div class="character-details">
+                            <div class="detail-item">
+                                <span class="detail-label">特殊能力</span>
+                                <span class="detail-value">派对策划</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">性格</span>
+                                <span class="detail-value">开朗、活泼、幽默</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">代表元素</span>
+                                <span class="detail-value">欢笑</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 剧情概览部分 -->
+    <section id="story" class="story">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">剧情概览</h2>
+                <p class="section-subtitle">跟随主角们一起成长</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-marker"></div>
+                        <h3>第一季：友谊的诞生</h3>
+                        <p>故事从暮光闪闪公主来到小马谷开始。在塞拉斯蒂亚公主的指引下，她结识了五位新朋友：苹果杰克、云宝、珍奇、柔柔和碧琪。通过一系列冒险，她们发现了友谊的魔法，并成为了和谐之元的守护者。</p>
+                        <div class="timeline-tags">
+                            <span class="tag">冒险</span>
+                            <span class="tag">友谊</span>
+                            <span class="tag">魔法</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-marker"></div>
+                        <h3>第二季：和谐之元的考验</h3>
+                        <p>随着友谊的加深，六位主角面临着更多的挑战。她们不仅要对抗各种反派，还要学习如何处理朋友之间的矛盾和误解。在这个过程中，她们的友谊变得更加坚固。</p>
+                        <div class="timeline-tags">
+                            <span class="tag">挑战</span>
+                            <span class="tag">成长</span>
+                            <span class="tag">团结</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-marker"></div>
+                        <h3>第三季：魔法的进化</h3>
+                        <p>暮光闪闪的魔法能力不断提升，她开始学习更高级的魔法知识。同时，其他小马们也在各自的领域成长，每个人都有了自己的目标和梦想。</p>
+                        <div class="timeline-tags">
+                            <span class="tag">魔法</span>
+                            <span class="tag">梦想</span>
+                            <span class="tag">成长</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-marker"></div>
+                        <h3>后续季度：友谊公主的旅程</h3>
+                        <p>随着剧情的发展，暮光闪闪成为了友谊公主，肩负起传播友谊魔法的重要使命。她和朋友们一起经历了更多冒险，帮助更多小马理解友谊的真谛。</p>
+                        <div class="timeline-tags">
+                            <span class="tag">使命</span>
+                            <span class="tag">冒险</span>
+                            <span class="tag">友谊</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精彩剧集推荐 -->
+    <section id="episodes" class="episodes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">精彩剧集推荐</h2>
+                <p class="section-subtitle">不容错过的经典时刻</p>
+            </div>
+
+            <div class="episode-grid">
+                <div class="episode-card">
+                    <div class="episode-number">S1E1</div>
+                    <div class="episode-content">
+                        <h3>友谊的魔法</h3>
+                        <p>故事的开端，暮光闪闪来到小马谷，结识了五位好朋友。</p>
+                        <div class="episode-meta">
+                            <span class="episode-tag episode-tag-primary">必看</span>
+                            <span class="episode-rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="episode-card">
+                    <div class="episode-number">S2E1</div>
+                    <div class="episode-content">
+                        <h3>谐律精华</h3>
+                        <p>反派幻形灵女王登场，六位主角面临巨大挑战。</p>
+                        <div class="episode-meta">
+                            <span class="episode-tag episode-tag-secondary">经典</span>
+                            <span class="episode-rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="episode-card">
+                    <div class="episode-number">S1E2</div>
+                    <div class="episode-content">
+                        <h3>碧琪的派对</h3>
+                        <p>碧琪为暮光闪闪举办欢迎派对，展现了她的派对策划能力。</p>
+                        <div class="episode-meta">
+                            <span class="episode-tag episode-tag-tertiary">欢乐</span>
+                            <span class="episode-rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="episode-card">
+                    <div class="episode-number">S2E7</div>
+                    <div class="episode-content">
+                        <h3>云宝的忠诚</h3>
+                        <p>云宝面临忠诚与梦想之间的选择，展现了她的成长。</p>
+                        <div class="episode-meta">
+                            <span class="episode-tag episode-tag-quaternary">感人</span>
+                            <span class="episode-rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="episode-card">
+                    <div class="episode-number">S1E25</div>
+                    <div class="episode-content">
+                        <h3>派对聚会</h3>
+                        <p>碧琪担心朋友们不再喜欢她的派对，展开了一场温馨的冒险。</p>
+                        <div class="episode-meta">
+                            <span class="episode-tag episode-tag-tertiary">欢乐</span>
+                            <span class="episode-rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="episode-card">
+                    <div class="episode-number">S2E25</div>
+                    <div class="episode-content">
+                        <h3>婚礼之谜</h3>
+                        <p>闪耀盔甲与音韵公主的婚礼，却隐藏着巨大的危机。</p>
+                        <div class="episode-meta">
+                            <span class="episode-tag episode-tag-secondary">经典</span>
+                            <span class="episode-rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 图片画廊 -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">图片画廊</h2>
+                <p class="section-subtitle">精彩瞬间</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">🌈</span>
+                        <span class="placeholder-text">彩虹瀑布</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">🏰</span>
+                        <span class="placeholder-text">友谊城堡</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">🎪</span>
+                        <span class="placeholder-text">盛大派对</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">🌸</span>
+                        <span class="placeholder-text">春日庆典</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">✨</span>
+                        <span class="placeholder-text">魔法时刻</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span class="placeholder-icon">🎭</span>
+                        <span class="placeholder-text">精彩演出</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌈 小马宝莉</h3>
+                    <p>友谊就是魔法</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#characters">角色介绍</a></li>
+                        <li><a href="#story">剧情概览</a></li>
+                        <li><a href="#episodes">精彩剧集</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于</h4>
+                    <p>本网站仅供学习和交流使用</p>
+                    <p>&copy; 2024 小马宝莉粉丝网站</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Worker注册 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then((registration) => {
+                        console.log('Service Worker注册成功:', registration);
+                    })
+                    .catch((error) => {
+                        console.log('Service Worker注册失败:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
